@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "child-process": "^1.0.2"
+  },
+  "scripts": {
+    "argToBashFunction": "run(){ echo ; echo \"  look this does not have $1:\"; dirInfo=$(ls | tr \"\n\" \" \"); echo \"  $dirInfo\"; echo \"  look this has $1:\"; mkdir $1; dirInfo=$(ls | tr \"\n\" \" \"); echo \"  $dirInfo\"; rm -rf $1; echo \"  look this does not have $1:\"; dirInfo=$(ls | tr \"\n\" \" \"); echo \"  $dirInfo\"; }; run"
   }
 }
