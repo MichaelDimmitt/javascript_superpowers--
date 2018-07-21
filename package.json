@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "child-process": "^1.0.2"
+  }
+}
